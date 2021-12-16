@@ -1,0 +1,688 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.glitch {
+    position: relative;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.glitch::before, .glitch:after
+{
+    content: "GRETACAMBRAI";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #231f38;
+    color: #fff;
+}
+
+.glitch::before
+{
+    left: 10px;
+    text-shadow: 5px 0 #3cd1e9;
+    animation: effect 3s infinite linear;
+}
+
+.glitch:after
+{
+    left: 4px;
+    text-shadow: -5px 0 #ff1d6f;
+    animation: effect 2s infinite linear;
+}
+
+@-webkit-keyframes effect
+{
+    0%{
+        clip:rect(55px, 9999px, 56px, 0);
+    }
+    5%{
+        clip:rect(47px, 9999px, 30px, 0);
+    }
+    10%{
+        clip:rect(33px, 9999px, 36px, 0);
+    }
+    15%{
+        clip:rect(35px, 9999px, 9px, 0);
+    }
+    20%{
+        clip:rect(63px, 9999px, 59px, 0);
+    }
+    25%{
+        clip:rect(96px, 9999px, 98px, 0);
+    }
+    30%{
+        clip:rect(48px, 9999px, 77px, 0);
+    }
+    35%{
+        clip:rect(50px, 9999px, 34px, 0);
+    }
+    40%{
+        clip:rect(60px, 9999px, 72px, 0);
+    }
+    45%{
+        clip:rect(10px, 9999px, 81px, 0);
+    }
+    50%{
+        clip:rect(2px, 9999px, 60px, 0);
+    }
+    55%{
+        clip:rect(23px, 9999px, 59px, 0);
+    }
+    60%{
+        clip:rect(76px, 9999px, 90px, 0);
+    }
+    65%{
+        clip:rect(62px, 9999px, 30px, 0);
+    }
+    70%{
+        clip:rect(60px, 9999px, 73px, 0);
+    }
+    75%{
+        clip:rect(60px, 9999px, 87px, 0);
+    }
+    80%{
+        clip:rect(2px, 9999px, 14px, 0);
+    }
+    85%{
+        clip:rect(28px, 9999px, 87px, 0);
+    }
+    90%{
+        clip:rect(73px, 9999px, 50px, 0);
+    }
+    95%{
+        clip:rect(79px, 9999px, 70px, 0);
+    }
+    100%{
+        clip:rect(17px, 9999px, 79px, 0);
+    }
+}
+
+h2 
+{
+    display: flex;
+    color: white;
+    font-size: 6em;
+    animation: fade 1s linear;
+    transform: translateY(0px);
+}
+
+@keyframes fade 
+{
+    0%
+    {
+        transform: translateY(200px);
+    }
+    
+    100%
+    {
+        transform: translateY(0px);
+    }    
+}
+
+
+h2 span
+{
+    margin: 0 auto;
+    padding: 0;
+    opacity: 0;
+}
+
+h2 span:nth-child(1)
+{
+    animation: animate 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #6200ff;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #ff0000;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+      
+}
+}
+
+h2 span:nth-child(2)
+{
+    animation: animate1 1s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate1 
+{
+    0%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #6200ff;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: #ff0000;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+      
+}
+}
+
+h2 span:nth-child(3)
+{
+    animation: animate2 1s linear infinite;
+    animation-delay: 1.7s;
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #6200ff;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #ff0000;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+      
+}
+}
+h2 span:nth-child(4)
+{
+    animation: animate3 1s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes animate3
+{
+    0%
+    {
+        color: #ff0000;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #6200ff;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+      
+}
+}
+h2 span:nth-child(5)
+{
+    animation: animate4 1s linear infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes animate4
+{
+    0%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #ff0000;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: #6200ff;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+      
+}
+}
+h2 span:nth-child(6)
+{
+    animation: animate5 1s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes animate5
+{
+    0%
+    {
+        color: 0f4;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #ff0000;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: #6200ff;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+      
+}
+}
+h2 span:nth-child(7)
+{
+    animation: animate6 1s linear infinite;
+    animation-delay: 3.5s;
+}
+
+@keyframes animate6
+{
+    0%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #6200ff;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #ff0000;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+      
+}
+}
+h2 span:nth-child(8)
+{
+    animation: animate7 1s linear infinite;
+    animation-delay: 4s;
+}
+
+@keyframes animate7
+{
+    0%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #6200ff;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #ff0000;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+      
+}
+}
+h2 span:nth-child(9)
+{
+    animation: animate8 1s linear infinite;
+    animation-delay: 4.5s;
+}
+
+@keyframes animate8
+{
+    0%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #6200ff;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: #ff0000;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+      
+}
+}
+h2 span:nth-child(10)
+{
+    animation: animate9 1s linear infinite;
+    animation-delay: 5s;
+}
+
+@keyframes animate9
+{
+    0%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #ff0000;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+    }
+}
+h2 span:nth-child(11)
+{
+    animation: animate10 1s linear infinite;
+    animation-delay: 5.5s;
+}
+
+@keyframes animate10
+{
+    0%
+    {
+        color: #6200ff;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: red;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+    }
+}
+h2 span:nth-child(12)
+{
+    animation: animate11 1s linear infinite;
+    animation-delay: 6s;
+}
+
+@keyframes animate11
+{
+    0%
+    {
+        color: red;
+        opacity: 1;
+    }
+
+    20%
+    {
+        color: #00b3ff;
+        opacity: 1;
+    }
+
+    40%
+    {
+        color: #0f4;
+        opacity: 1;
+    }
+
+    60%
+    {
+        color: #6200ff;
+        opacity: 1;
+    }
+
+    80%
+    {
+        color: #ff00c8;
+        opacity: 1;
+    }
+
+    100%
+    {
+        color: black;
+        display: none;
+    }
+}
