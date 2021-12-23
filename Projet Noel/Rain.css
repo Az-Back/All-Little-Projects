@@ -1,0 +1,37 @@
+
+i {
+    position: absolute;
+    height: 200px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: animate10 5s linear infinite;
+}
+
+@keyframes animate10
+{
+    0%
+    {
+        transform: translateY(-1000px);
+    }
+
+    100%
+    {
+        transform: translateY(-200px);
+    }
+
+    
+}
+
+i:nth-child(3n+1)
+{
+    background: linear-gradient(transparent, #0ff);
+}
+i:nth-child(3n+2)
+{
+    background: linear-gradient(transparent, #0f0);
+}
+i:nth-child(3n+3)
+{
+    background: linear-gradient(transparent, #f00);
+}
